@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    text-shadow: 3px 3px 3px gray;
+    border: 2px solid black;
+  }
+  
+  #calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+  }
+  
+  .day {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .day-header {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .slot {
+    margin-bottom: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .booked {
+    background-color: #ffcccc;
+    cursor: not-allowed;
+  }
+  
+  .available {
+    background-color: #ccffcc;
+  }
